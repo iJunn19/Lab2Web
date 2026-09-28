@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>praktikum 2</title>
+  </head>
+  <body>
+    <!-- table -->
+    <table border="1">
+      <tr>
+        <th>NIM</th>
+        <th>Nama</th>
+        <th>Program Studi</th>
+      </tr>
+      <tr>
+        <td>31241001</td>
+        <td>Andi</td>
+        <td>Teknik Informatika</td>
+      </tr>
+    </table>
+
+    <!-- pengantar struktur -->
+    <table border="1">
+      <caption>
+        Data Mahasiswa
+      </caption>
+      <thead>
+        <tr>
+          <th>NIM</th>
+          <th>Nama</th>
+          <th>Nilai</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>31241001</td>
+          <td>Andi</td>
+          <td>85</td>
+        </tr>
+        <tr>
+          <td>31241002</td>
+          <td>Budi</td>
+          <td>90</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Rata-rata</td>
+          <td>87.5</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!--  pengantar-->
+    <form>
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+      <button type="submit">Kirim</button>
+    </form>
+
+    <!-- pengantar textarea, select, button -->
+    <label for="alamat">Alamat</label>
+    <textarea id="alamat" name="alamat" rows="4" cols="40"></textarea>
+    <label for="prodi">Program Studi</label>
+    <select id="prodi" name="prodi">
+      <option value="ti">Teknik Informatika</option>
+      <option value="si">Sistem Informasi</option>
+    </select>
+    <button type="submit">Simpan</button>
+
+    <!-- pengantar semantic HTML -->
+    <header><h1>Portal Mahasiswa</h1></header>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="biodata.html">Profil</a>
+    </nav>
+    <main>
+      <section>
+        <h2>Berita Akademik</h2>
+        <article>
+          <h3>Praktikum HTML</h3>
+          <p>Mahasiswa mengikuti praktikum HTML lanjutan.</p>
+        </article>
+      </section>
+      <aside>Informasi tambahan</aside>
+    </main>
+    <footer><p>2026 Teknik Informatika</p></footer>
+
+    <!-- pengantar multimedia HTML -->
+    <audio controls>
+      <source src="media/baby-laughing-meme.mp3" type="audio/mpeg" />
+      Browser tidak mendukung audio.
+    </audio>
+    <video controls width="480">
+      <source
+        src="media/magicsync.mp3_musicaldown.com_1790584114.mp4"
+        type="video/mp4"
+      />
+      Browser tidak mendukung video.
+    </video>
+
+    <!-- pengantar validasi form dasar -->
+    <form>
+      <input type="text" name="nama" required minlength="3" />
+      <input type="email" name="email" required />
+      <input type="number" name="umur" min="17" max="60" required />
+      <button type="submit">Kirim</button>
+    </form>
+  </body>
+</html>
